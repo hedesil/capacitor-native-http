@@ -1,7 +1,0 @@
-{
-  "appId": "com.hedesil.capacitornativehttp",
-  "appName": "capacitor-native-http",
-  "bundledWebRuntime": true,
-  "npmClient": "npm",
-  "webDir": "www"
-}
