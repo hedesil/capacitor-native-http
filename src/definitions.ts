@@ -6,4 +6,5 @@ declare module "@capacitor/core" {
 
 export interface NativeHttpPlugin {
   echo(options: { value: string }): Promise<{value: string}>;
+  capacitorGetRequest(): Promise<any>;
 }
