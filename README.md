@@ -1,0 +1,1 @@
+This project uses some classes of https://github.com/silkimen/cordova-plugin-advanced-http

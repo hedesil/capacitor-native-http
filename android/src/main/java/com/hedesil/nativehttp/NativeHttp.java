@@ -1,4 +1,4 @@
-package com.hedesil.capacitornativehttp;
+package com.hedesil.nativehttp;
 
 import com.getcapacitor.JSObject;
 import com.getcapacitor.NativePlugin;
