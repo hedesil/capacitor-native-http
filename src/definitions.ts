@@ -5,6 +5,14 @@ declare module "@capacitor/core" {
 }
 
 export interface NativeHttpPlugin {
-  echo(options: { value: string }): Promise<{value: string}>;
   capacitorGetRequest(): Promise<any>;
+  enable(): Promise<SetResult>
+  disable(): Promise<SetResult>;
 }
+
+export class State{
+  constructor(public isEnabled: boolean) {
+  }
+}
+
+export type SetResult = State

@@ -1,5 +1,5 @@
 import { WebPlugin } from '@capacitor/core';
-import { NativeHttpPlugin } from './definitions';
+import {NativeHttpPlugin, SetResult} from './definitions';
 
 export class NativeHttpWeb extends WebPlugin implements NativeHttpPlugin {
   constructor() {
@@ -9,9 +9,17 @@ export class NativeHttpWeb extends WebPlugin implements NativeHttpPlugin {
     });
   }
 
-  async echo(options: { value: string }): Promise<{value: string}> {
-    console.log('ECHO', options);
-    return options;
+  async capacitorGetRequest(): Promise<any> {
+    console.log('CAPACITOR GET')
+    return Promise.resolve(undefined);
+  }
+
+  async disable(): Promise<SetResult> {
+    return Promise.resolve({ isEnabled: undefined });
+  }
+
+  async enable(): Promise<SetResult> {
+    return Promise.resolve({ isEnabled: undefined });
   }
 }
 
